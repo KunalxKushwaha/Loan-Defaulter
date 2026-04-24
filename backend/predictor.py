@@ -48,6 +48,7 @@ def load_model():
     """Load the trained pipeline from disk. Returns the pipeline or None."""
     if not os.path.exists(MODEL_PATH):
         return None
+    print("Loading model from:", MODEL_PATH)
     return joblib.load(MODEL_PATH)
 
 

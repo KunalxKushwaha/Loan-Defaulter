@@ -97,3 +97,5 @@ Open your browser at **http://localhost:8501**
 - `loan_percent_income` is **auto-calculated** from loan amount ÷ income — no manual input needed.
 - If the model file is missing, a warning banner appears and training instructions are shown.
 - The app works with any sklearn-compatible pipeline saved with `joblib.dump`.
+
+# Made with 💖 by Kunal Kushwaha

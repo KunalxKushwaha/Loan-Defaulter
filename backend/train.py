@@ -94,7 +94,7 @@ def train():
             ("num", StandardScaler(), NUMERICAL_COLS),
             ("cat", OneHotEncoder(handle_unknown="ignore"), CATEGORICAL_COLS),
         ],
-        remainder="passthrough",
+        remainder="drop",
     )
 
     scale_pos_weight = len(y_train[y_train == 0]) / len(y_train[y_train == 1])
